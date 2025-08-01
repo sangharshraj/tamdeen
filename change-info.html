@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="assets/css/demo.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper profile">
 		<div class="main-header">
 			<div class="logo-header">
 				<a href="index.html" class="logo">
@@ -182,7 +182,7 @@
 								<span class="badge badge-count">14</span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="profile.html">
 								<i class="la la-user"></i>
 								<p>Profile</p>
@@ -224,16 +224,114 @@
 			<div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
-						<h4 class="page-title">Promotions</h4>
-						
-						 <div class="row">
-							<div class="col">
-								<h2>Coming Soon...</h2>
+						<div class="title-header-main">
+							<h4 class="page-title">Edit Basic Info</h4>
+							<!-- Example single danger button -->
+							<div class="btn-group setting-btn">
+								<button type="button" class="btn btn-primary rounded-circle dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<i class="la la-cog" style="font-size: 26px !important;"></i>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right" style="max-width: 150px !important;">
+								<a class="dropdown-item" href="/change-info.html">Change Info</a>
+								<a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">Change Email</a>
+								<a class="dropdown-item" href="#">Change Password</a>
+								
 							</div>
-						 </div>
+							</div>
+						</div>
+						
+						<div class="row">
+                           <div class="col-md-12">
+									<div class="card card-tasks profile-page">
+												<div class="profile-input-form">
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group">
+																<label for="largeInput">Select Mall</label>
+																<select class="form-control" id="exampleFormControlSelect1">
+																	<option value="default">Select Mall</option>
+																	<option>360</option>
+																	<option>Al Khiran</option>
+																	
+																</select>
+															</div>
+														</div>	
+														<div class="col-md-6">
+															<div class="form-group">
+																<label for="largeInput">Select Store</label>
+																<select class="form-control" id="exampleFormControlSelect1">
+																	<option value="default">Select Store</option>
+																	<option>Starbucks</option>
+																	<option>Redtape</option>
+																	<option>Puma</option>
+																	<option>Campus</option>
+																	<option>H&M</option>
+																	
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="dropdown-divider"></div>
+													<div class="row">	 
+														<div class="col-md-6">
+															<div class="form-group">
+																<label for="textName">Contact Info</label>
+																<input type="text" class="form-control form-control" id="textName" value="Mike (Manager)" placeholder="Name of Manager">
+																<input type="text" class="form-control form-control mt-2" value="Cell: +965 12345 67890"  id="textName" placeholder="Cell : Phone ">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group">
+																<label for="textName">Operating Hours</label>
+																<input type="text" class="form-control form-control" value="Weekdays: 10:00 to 22:00 Hrs  " id="textName" placeholder="Name">
+																<input type="text" class="form-control form-control mt-2" value="Weekends: 10:00 to 22:00 Hrs" id="textName" placeholder="Name">
+															</div>
+														</div>													
+													</div>
+													<div class="dropdown-divider"></div>
+													<div class="row">	 
+														<div class="col-md-6">
+															<div class="form-group">
+																 <label for="exampleFormControlFile1">Edit Image</label>
+                                                                  <input type="file" class="form-control-file border p-1 rounded" id="exampleFormControlFile1">
+																<!-- <div class="form-group">
+																	<label class="control-label">Logo</label> 
+																	<p class="form-control-static">Starbucks.png</p></div> -->
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label for="textName">Social Media Link</label>
+																	<input type="text" class="form-control form-control" value="starbucks/tamdeen/360/facebook" id="textName" placeholder="Name">
+																	
+																</div>
+															</div>													
+													</div>	
+													<div class="dropdown-divider"></div>										  
+													<div class="row">
+														<div class="col-md-12">
+															<div class="form-group">
+																<label for="comment">Comment</label>
+																<textarea class="form-control" id="comment" rows="3"></textarea>
+															</div>
+
+														</div>
+													</div>
+													
+													<div class="col text-right mt-3">
+														<button class="btn rounded-pill btn-primary">Save</button>
+														<button class="btn rounded-pill btn-secondary">Cancel</button>
+													</div>
+													
+												</div>
+											  </div>
+										</div>
+									</div>
+						   </div>
+						</div>
 					</div>
 				</div>
-				<footer class="footer d-none">
+				<footer class="footer">
 					<div class="container-fluid">
 						<nav class="pull-left">
 							<ul class="nav">
@@ -249,24 +347,37 @@
 			</div>
 		</div>
 	</div>
-	
-	
+	<!-- Modal -->
+
+
+	<!-- delete confirmation popup started -->
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content">
+		<div class="modal-wrapper-delete">
+			<h6> Are you sure you want to change your Email Address </h6>  
+			<div class="modal-footer1">
+				<button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Yes</button>
+				<button type="button" class="btn btn-secondary rounded-pill">Cancel</button>
+			</div>
+		</div>
+			
+    </div>
+  </div>
+</div>
+	<!-- delete confirmation popup end -->
 </body>
 <script src="assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 <script src="assets/js/core/popper.min.js"></script>
 <script src="assets/js/core/bootstrap.min.js"></script>
-<!-- <script src="assets/js/plugin/chartist/chartist.min.js"></script> -->
-<!-- <script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script> -->
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
 <script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
-<!-- <script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
-<script src="assets/js/plugin/chart-circle/circles.min.js"></script> -->
+<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
 <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/js/ready.min.js"></script>
-<script src="assets/js/demo.js"></script>
-
-
 </html>

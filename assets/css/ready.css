@@ -2014,6 +2014,29 @@ body {
   position: relative;
 }
 
+.modal-wrapper-delete {
+  padding: 20px 20px;
+}
+.modal-wrapper-delete h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.modal-wrapper-delete .modal-footer1 {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+.modal-wrapper-delete .modal-footer1 button {
+  border-radius: 6px !important;
+  padding: 3px 10px !important;
+  flex: 1;
+}
+
+.btn {
+  padding: 7px 15px !important;
+}
+
 .gj-datepicker button {
   padding: 0;
 }
@@ -2027,6 +2050,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.rounded-pill {
+  border-radius: 30px !important;
 }
 
 .btn-group .filterbtn {
@@ -2048,12 +2075,33 @@ body {
   top: 0;
   height: 100vh;
 }
+.wrapper .title-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.wrapper .title-header-main .page-title {
+  margin-bottom: 0;
+}
 .wrapper.login .img-container {
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.wrapper.profile .setting-btn .dropdown-toggle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper.profile .setting-btn .dropdown-toggle:after {
+  display: none !important;
+}
+
 .main-header {
   min-height: 55px;
   width: 100%;

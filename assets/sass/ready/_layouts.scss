@@ -15,6 +15,29 @@ body {
   text-overflow: ellipsis;
 }
 
+.modal-wrapper-delete {
+  padding: 20px 20px;
+  h6 {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .modal-footer1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+
+    button {
+      border-radius: 6px !important;
+      padding: 3px 10px !important;
+      flex: 1;
+    }
+  }
+}
+.btn {
+  padding: 7px 15px !important;
+}
+
 // gj-datepicker
 .gj-datepicker {
   button {
@@ -31,6 +54,10 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+
+.rounded-pill {
+  border-radius: 30px !important;
 }
 
 .btn-group {
@@ -53,14 +80,40 @@ body {
   position: relative;
   top: 0;
   height: 100vh;
+
+  .title-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .page-title {
+      margin-bottom: 0;
+    }
+  }
+
   &.login {
     .img-container {
-       width: 70%;
+      width: 70%;
       display: flex;
       justify-content: center;
       align-items: center;
-      img {
-       
+    }
+  }
+
+  // profile
+
+  &.profile {
+    .setting-btn {
+      .dropdown-toggle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+          display: none !important;
+        }
       }
     }
   }

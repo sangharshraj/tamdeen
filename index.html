@@ -204,7 +204,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="notifications.html">
+							<a href="login.html">
 								<i class="la la-power-off"></i>
 								<p>Logout</p>
 								<span class="badge badge-success">3</span>
@@ -224,7 +224,16 @@
 			<div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
-						<h4 class="page-title">Dashboard</h4>
+						<!-- <h4 class="page-title">Dashboard</h4> -->
+						<div class="breadcrumb-wrapper">
+							<nav aria-label="breadcrumb" class="page-title-breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+															
+								</ol>
+							</nav>
+						</div>
+						  
 						
 						<div class="dashboard-cards-wrapper">
 
@@ -277,14 +286,14 @@
 							</div>
 						</div>
 						<div class="dashboard-carousel owl-carousel">
-                          <div class="carousel-card bg-white rounded">
+                          <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider1.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Eid Celebration Event</h6>
 								<p>Celebrate Eid with us at the mall! Enjoy live entertainment, delicious food, exclusive offers, family activities, kids’ games, henna art, and festive décor. Create joyous memories together this Eid!</p>
 							</div>
 						  </div>
-                          <div class="carousel-card bg-white rounded">
+                          <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider2.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Quran Recitation Event</h6>
@@ -292,7 +301,7 @@
 							</div>
 							
 						  </div>
-                          <div class="carousel-card bg-white rounded">
+                          <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider3.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Book Early and Discuss Details</h6>
@@ -300,14 +309,14 @@
 							</div>
 							
 						  </div>
-                          <div class="carousel-card bg-white rounded">
+                          <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider4.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Eid Celebration Event</h6>
 								<p>Celebrate Eid with us at the mall! Enjoy live entertainment, delicious food, exclusive offers, family activities, kids’ games, henna art, and festive décor. Create joyous memories together.</p>
 							</div>
 						  </div>
-						  <div class="carousel-card bg-white rounded">
+						  <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider5.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Book Early and Discuss Details</h6>
@@ -315,7 +324,7 @@
 							</div>
 							
 						  </div>
-						  <div class="carousel-card bg-white rounded">
+						  <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider6.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Book Early and Discuss Details</h6>
@@ -323,7 +332,7 @@
 							</div>
 							
 						  </div>
-						  <div class="carousel-card bg-white rounded">
+						  <div class="carousel-card bg-white rounded" onclick="window.location.href='dasAannouncement.html';">
                             <img src="./assets/img/slider3.jpg" alt="image1">
 							<div class="card-body">
 								<h6>Book Early and Discuss Details</h6>
@@ -382,17 +391,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-primary">Completed</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -411,17 +413,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-warning">Pending</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -440,17 +435,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-primary">Completed</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -469,17 +457,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-warning">Pending</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -498,17 +479,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-primary">Completed</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -527,17 +501,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-warning">Pending</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -556,17 +523,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-primary">Completed</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -585,17 +545,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-primary">Completed</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													<tr>
@@ -614,17 +567,10 @@
 														<td>Zara</td>
 														<td>20-04-25 : 11:00 AM </td>
 														<td>200 KWD</td>
-														<td class="Pending">Pending</td>
+														<td class="Pending"><span class="badge badge-warning">Pending</span></td>
 														
 														<td class="td-actions text-center">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
+															<a href="#" data-toggle="tooltip" title="" data-original-title="View the bill"><i class="la la-eye"></i></a>
 														</td>
 													</tr>
 													

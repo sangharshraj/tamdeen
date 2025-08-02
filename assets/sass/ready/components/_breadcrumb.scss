@@ -1,0 +1,14 @@
+.page-title-breadcrumb {
+  .breadcrumb {
+    padding: 0;
+    background: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 20px;
+    .breadcrumb-item {
+      cursor: pointer;
+    }
+  }
+}

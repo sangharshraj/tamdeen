@@ -8,13 +8,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-	<link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-
 	<link rel="stylesheet" href="assets/css/ready.css">
 	<link rel="stylesheet" href="assets/css/demo.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper announcement-page">
 		<div class="main-header">
 			<div class="logo-header">
 				<a href="index.html" class="logo">
@@ -225,19 +223,22 @@
 			</div>
 			<div class="main-panel">
 				<div class="content">
+                    <!-- breadcrumbe start -->
+                     
 					<div class="container-fluid">
 						<div class="breadcrumb-wrapper">
                         <nav aria-label="breadcrumb" class="page-title-breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item" aria-current="page">Promotions</li>
-                                    <!-- <li class="breadcrumb-item active" aria-current="page">Announcement list</li> -->                                                        
+                                    <li class="breadcrumb-item" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Announcement list</li>
+                                                        
                                 </ol>
                         </nav>
                         </div>
-						
-						 <div class="row">			
-							<div class="col-md-12">
-								<div class="card card-tasks">
+                    <!-- breadcrumbe end -->
+						<div class="row">
+                           <div class="col-md-12">
+									<div class="card card-tasks">
 									<div class="card-header">
 										
 										<div class="filter-wrapper d-flex justify-content-between">
@@ -251,220 +252,97 @@
                                                 </div>
                                             </div>
                                              </form>
-											<div class="filter-btn-wrapper">
-												
-                                                <div class="btn-group">
-													<button type="button" class="btn btn-info-light dropdown-toggle filterbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<i class="la la-filter"></i> Filter
-													</button>
-													<div class="dropdown-menu dropdown-menu-right">
-														<form class="filter-form p-4">
-															<div class="mb-2"> 
-																<label for="text1" class="form-label text-sm">Filter Data Based On Bill Status</label>
-																<select class="form-control form-control-sm">
+											<div class="filter-btn-wrapper d-flex " style="gap: 10px;">
+												<select class="form-control form-control-sm">
 																	<option>Approved</option>
 																	<option>Rejected</option>
 																	<option>Pending</option>
 																	<option>Select Status</option>
-																</select>						
-															</div>
-															<div class="mb-2">
-																<label for="text2" class="form-label">Filter Data Based on Malls</label>
-																<select class="form-control form-control-sm">
+																</select>	
+                                                                <select class="form-control form-control-sm">
 																	<option>Select Malls</option>
 																	<option>360</option>
 																	<option>Al Khiran</option>
 																	<option>Al Kaout</option>
 																	<option>WareHouse</option>
-																</select>		
-															</div>
-															<div class="mb-2">
-																<label for="text3" class="form-label">Filter Data Based on Stores</label>
-																<select class="form-control form-control-sm">
-																	<option>Select Stores</option>
-																	<option>Zara</option>
-																	<option>H&M</option>
-																	<option>D&G</option>
-																	<option>Desal</option>
-																</select>							
-															</div>
-															<div class="mb-2">
-																<label for="text3" class="form-label">Filter Data Based on DateRange</label>
-																	<div class="d-flex gap-2 justify-content-between">
-																		<input id="datepicker" placeholder="dd/mm/yy" width="140" />
-																		<input id="datepicker1" placeholder="dd/mm/yy" width="140" />
-																	</div>						
-															</div>
-														</form>															
-													</div>
-                                                </div>
-												
+																</select>	
+                                               
 											</div>
                                         </div>
 									</div>
 									<div class="card-body px-0">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="card">
-                                                     <div class="promotion-card p-3">
-														 <table class="w-100">
-															<thead>
-																<tr style="border-bottom: 1px solid rgb(112, 106, 106);">
-																<th style="width: 30%;">Name</th>
-																<th style="width: 70%;">Summer Sale</th>
-															</tr>
-															</thead>
-															<tbody >
-																<tr>
-																<td class="pt-2">Start Date</td>
-																<td class="pt-2">5 May 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>End Date</td>
-																<td>5 May 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>Mall Name</td>
-																<td>360</td>
-															</tr>
-															<tr>
-																<td>Details</td>
-																<td>Details will be provided by Tamdeen group</td>
-															</tr>
-															<tr>
-																<td>Banner</td>
-																<td><img src="#" alt="#"></td>
-															</tr>
-															</thead>
-														 </table>
-													 </div>	
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div onclick="window.location.href='/'" class="card">
-                                                     <div class="promotion-card p-3">
-														 <table class="w-100">
-															<thead>
-																<tr style="border-bottom: 1px solid rgb(112, 106, 106);">
-																<th style="width: 30%;">Name</th>
-																<th style="width: 70%;">Summer Sale</th>
-															</tr>
-															</thead>
-															<tbody >
-																<tr>
-																<td class="pt-2">Start Date</td>
-																<td class="pt-2">19 November 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>End Date</td>
-																<td>25 November 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>Mall Name</td>
-																<td>360</td>
-															</tr>
-															<tr>
-																<td>Details</td>
-																<td>Details will be provided by Tamdeen group</td>
-															</tr>
-															<tr>
-																<td>Banner</td>
-																<td><img src="#" alt="#"></td>
-															</tr>
-															</thead>
-														 </table>
-													 </div>	
-												</div>
-											</div>
+										<div class="table-responsive">
+											<table class="table table-head-bg-info table-striped table-hover">
+												<thead>
+													<tr>
+														
+														<th class="text-center">Sr No.</th>
+														<th>Name of Announcements</th>
+														<th>Date & Time</th>
+														<th class="text-center">Mall Name</th>											
+														<th class="text-center">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>														
+														<td class="text-center">1.</td>
+														<td>New Update</td>
+														<td>12-03-24 : 10:00AM</td>
+														<td class="text-center">360</td>														
+														<td class="td-actions text-center">
+															<a href="dasAannouncement.html"><i class="la la-eye"></i></a>
+														</td>
+													</tr>
+                                                    <tr>														
+														<td class="text-center">2.</td>
+														<td>New Event Launched</td>
+														<td>12-03-24 : 10:00AM</td>
+														<td class="text-center">The Warehouse</td>														
+														<td class="td-actions text-center">
+															<a href="dasAannouncement.html"><i class="la la-eye"></i></a>
+														</td>
+													</tr>
+                                                    <tr>														
+														<td class="text-center">3.</td>
+														<td>New Update</td>
+														<td>12-03-24 : 10:00AM</td>
+														<td class="text-center">Al Kout</td>														
+														<td class="td-actions text-center">
+															<a href="dasAannouncement.html"><i class="la la-eye"></i></a>
+														</td>
+													</tr>
+                                                    <tr>														
+														<td class="text-center">4.</td>
+														<td>New Update</td>
+														<td>12-03-24 : 10:00AM</td>
+														<td class="text-center">360</td>														
+														<td class="td-actions text-center">
+															<a href="dasAannouncement.html"><i class="la la-eye"></i></a>
+														</td>
+													</tr>
+                                                    <tr>														
+														<td class="text-center">4.</td>
+														<td>New Update</td>
+														<td>12-03-24 : 10:00AM</td>
+														<td class="text-center">Al Khiran</td>														
+														<td class="td-actions text-center">
+															<a href="dasAannouncement.html"><i class="la la-eye"></i></a>
+														</td>
+													</tr>
+													
+													
+												</tbody>
+											</table>
 										</div>
-										<div> 
-											<h5 class="text-primary font-weight-bold">Upcoming Promotions</h5>
-										</div>
-										<div class="row">
-											
-											<div class="col-md-6">
-												<div class="card">
-                                                     <div class="promotion-card p-3">
-														 <table class="w-100">
-															<thead>
-																<tr style="border-bottom: 1px solid rgb(112, 106, 106);">
-																<th style="width: 30%;">Name</th>
-																<th style="width: 70%;">Summer Sale</th>
-															</tr>
-															</thead>
-															<tbody >
-																<tr>
-																<td class="pt-2">Start Date</td>
-																<td class="pt-2">5 May 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>End Date</td>
-																<td>5 May 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>Mall Name</td>
-																<td>360</td>
-															</tr>
-															<tr>
-																<td>Details</td>
-																<td>Details will be provided by Tamdeen group</td>
-															</tr>
-															<tr>
-																<td>Banner</td>
-																<td><img src="#" alt="#"></td>
-															</tr>
-															</thead>
-														 </table>
-													 </div>	
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="card">
-                                                     <div class="promotion-card p-3">
-														 <table class="w-100">
-															<thead>
-																<tr style="border-bottom: 1px solid rgb(112, 106, 106);">
-																<th style="width: 30%;">Name</th>
-																<th style="width: 70%;">Summer Sale</th>
-															</tr>
-															</thead>
-															<tbody >
-																<tr>
-																<td class="pt-2">Start Date</td>
-																<td class="pt-2">19 November 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>End Date</td>
-																<td>25 November 2025 at 11:00 AM</td>
-															</tr>
-															<tr>
-																<td>Mall Name</td>
-																<td>360</td>
-															</tr>
-															<tr>
-																<td>Details</td>
-																<td>Details will be provided by Tamdeen group</td>
-															</tr>
-															<tr>
-																<td>Banner</td>
-																<td><img src="#" alt="#"></td>
-															</tr>
-															</thead>
-														 </table>
-													 </div>	
-												</div>
-											</div>
-										</div>
-										
 									</div>
 									<div class="card-footer ">
 										<div class="stats">
-											<i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+											<i class="now-ui-icons loader_refresh spin"></i> Updated 23 minutes ago
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						 </div>
 					</div>
 				</div>
 				<footer class="footer d-none">
@@ -501,19 +379,6 @@
 <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/js/ready.min.js"></script>
 <script src="assets/js/demo.js"></script>
-<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
- <script>
-        $('#datepicker').datepicker({
-            uiLibrary: 'bootstrap4',
-			placeholder: true
-        });
-        $('#datepicker1').datepicker({
-            uiLibrary: 'bootstrap4',
-			placeholder: true
-        });
 
-
-		
-    </script>
 
 </html>

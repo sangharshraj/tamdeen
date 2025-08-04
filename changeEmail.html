@@ -17,33 +17,48 @@
         <div class="row login-wrapper">
           <div class="col-md-6">
             <div class="img-container">
-              <img src="assets/img/otp.svg" width="width: 450px;" class="img-fluid" alt="signup" />
+              <img src="assets/img/changeEmail3.svg" width="width: 450px;" class="img-fluid" alt="signup" />
             </div>
           </div>
+          <!-- inital screen of emailchange -->
           <div class="col-md-6">
             <div class="login-right-content">
               <div class="welcome-header">
-                <h3>Create Password</h3>
-                <h6 class="font-weight-light">Enter the new passwords</h6>
+                <h5 class="mb-2">Change Email Address</h5>
+                <h6 class="font-weight-light">Please enter the OTP shared on your registered Email Address.</h6>
               </div>
               <form>
                 <div class="form-group px-0">
-                  <label for="exampleInputEmail1">Enter Password <span class="text-danger">*</span></label>
-                  <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                  <!-- <label for="exampleInputEmail1">Enter Password <span class="text-danger">*</span></label> -->
+                  <input type="password" class="form-control" id="#" placeholder="Enter the OTP" aria-describedby="emailHelp" />
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
-                <div class="form-group p-0">
-                  <label for="exampleInputPassword1">Confirm Password<span class="text-danger">*</span></label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" />
-                  <!-- <div class="text-right pt-2"><a href="forgotPass.html">Forget Password?</a></div> -->
+
+                <div class="text-center pt-3"><span class="mr-3">OTP not received yet? </span> <a href="#">Resend</a></div>
+                <button type="submit" class="btn btn-primary btn-full rounded-pill mt-4">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Second screen of emailchange -->
+          <div class="col-md-6 d-none">
+            <div class="login-right-content">
+              <div class="welcome-header">
+                <h5 class="mb-2">Set Your New Email</h5>
+              </div>
+              <form>
+                <div class="form-group px-0">
+                  <label for="exampleInputEmail1">Enter New Email <span class="text-danger">*</span></label>
+                  <input type="mail" class="form-control" id="#" placeholder="Enter New Email" aria-describedby="emailHelp" />
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
-                <!-- <div class="form-check">
-                  <label class="form-check-label" for="exampleCheck1">Check me out </label>
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                </div> -->
+                <div class="form-group px-0">
+                  <label for="exampleInputEmail1">Confirm Email <span class="text-danger">*</span></label>
+                  <input type="mail" class="form-control" id="#" placeholder="Enter Confirm Email" aria-describedby="emailHelp" />
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
 
                 <button type="submit" class="btn btn-primary btn-full rounded-pill mt-4">Submit</button>
-                <!-- <div class="text-center pt-3"><span class="mr-3">Don't Have an Account?</span> <a href="#"> Sign Up</a></div> -->
               </form>
             </div>
           </div>

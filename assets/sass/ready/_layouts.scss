@@ -159,6 +159,20 @@ body {
       }
     }
   }
+
+  // promotions-details
+  &.promotion-details {
+    table {
+      td {
+        padding: 8px;
+        &:nth-child(1) {
+          width: 25%;
+          font-weight: 600;
+          color: #2c2b2b;
+        }
+      }
+    }
+  }
 }
 
 .main-header {

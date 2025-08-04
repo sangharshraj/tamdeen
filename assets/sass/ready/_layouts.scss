@@ -105,11 +105,24 @@ body {
   }
 
   &.login {
-    .img-container {
-      width: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .login-wrapper {
+      height: 100vh;
+      .img-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 450px;
+        }
+      }
+      .login-right-content {
+        padding: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   }
 

@@ -475,10 +475,90 @@ body {
 
 .footer {
   border-top: 1px solid #eee;
-  padding: 15px;
-  background: $white-color;
-  .container-fluid {
+  background-color: #fff;
+  // background: #ebe9e971;
+  padding-top: 30px;
+   h6{
+      font-size: 18px;
+      margin-bottom: 0;
+      position: relative;
+      display: inline-block;
+      color: $primary-color;
+      &::after{
+        background-color: $primary-color;
+        border-radius: 30px;
+        width: 100%;
+        height: 2px;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+      }
+    }
+  .footer-nav-info {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    p{
+      margin-top: 25px;
+      font-size: 14px;
+    }
+  }
+  .footer-navigation{
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+       margin-top: 25px;
+      a{
+        padding: 0;
+        text-decoration: none;
+        color:$body-text-color;
+        transition: all 0.3s ease;
+        &:hover{
+          color: $primary-color;
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+  .getInTouch{
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+      margin-top: 25px;
+      a{
+        padding: 0;
+        text-decoration: none;
+        color:$body-text-color;    
+      }
+    }
+  }
+  .address{
+    ul{
+      display: flex;
+      gap: 12px;
+      margin-top: 25px;
+      a{
+        padding: 0;
+        text-decoration: none;
+        color:$body-text-color;    
+        i{
+          font-size: 32px;
+          color:#180d53;
+        }
+      }
+    }
+  }
+  .copyright{
+    margin-top: 25px;
+    background-color: #f3f3f3;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: bold;
   }
 }
+

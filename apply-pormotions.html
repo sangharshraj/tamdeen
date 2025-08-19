@@ -6,8 +6,8 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/css/ready.css">
 	<link rel="stylesheet" href="assets/css/demo.css">
 </head>
@@ -175,7 +175,7 @@
 								<span class="badge badge-count">5</span>
 							</a>
 						</li>
-						<li class="nav-item">
+                        <li class="nav-item active">
 							<a href="managebill.html">
 								<i class="la la-file-text-o"></i>
 								<p>Manage Bills</p>
@@ -199,14 +199,14 @@
 						<li class="nav-item">
 							<a href="promotions.html">
 								<i class="la la-th"></i>
-								<p>Requested Promotions</p>
+								<p>Requested Promotion</p>
 								<span class="badge badge-count">6</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="logout.html">
+							<a href="notifications.html">
 								<i class="la la-power-off"></i>
-								<p>Logout</p>
+								<p>logout</p>
 								<span class="badge badge-success">3</span>
 							</a>
 						</li>
@@ -224,16 +224,208 @@
 			<div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
-						<h4 class="page-title">Applied Promotions</h4>
+						<div class="breadcrumb-wrapper">
+							<nav aria-label="breadcrumb" class="page-title-breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item active" aria-current="page">Promotions</li>
+										<li class="breadcrumb-item" aria-current="page">List of Applied Promotions</li>
+															
+									</ol>
+							</nav>
+						</div>
+
 						
-						 <div class="row">
-							<div class="col">
-								<h2>Coming Soon...</h2>
+						<div class="row">			
+							<div class="col-md-12">
+								<div class="card card-tasks">
+									<div class="card-header">
+										
+										<div class="filter-wrapper d-flex justify-content-between">
+                                            <form class="navbar-left navbar-form nav-search mr-md-3 mt-0" action="">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Search ..." class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">
+                                                        <i class="la la-search search-icon"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                             </form>
+											<div class="filter-btn-wrapper">
+												
+                                                <div class="btn-group">
+													<button type="button" class="btn btn-info-light dropdown-toggle filterbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="la la-filter"></i> Filter
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+														<form class="filter-form p-4">
+															<div class="mb-2"> 
+																<label for="text1" class="form-label text-sm">Filter Data Based On Bill Status</label>
+																<select class="form-control form-control-sm">
+																	<option>Approved</option>
+																	<option>Rejected</option>
+																	<option>Pending</option>
+																	<option>Select Status</option>
+																</select>						
+															</div>
+															<div class="mb-2">
+																<label for="text2" class="form-label">Filter Data Based on Malls</label>
+																<select class="form-control form-control-sm">
+																	<option>Select Malls</option>
+																	<option>360</option>
+																	<option>Al Khiran</option>
+																	<option>Al Kaout</option>
+																	<option>WareHouse</option>
+																</select>		
+															</div>
+															<div class="mb-2">
+																<label for="text3" class="form-label">Filter Data Based on Stores</label>
+																<select class="form-control form-control-sm">
+																	<option>Select Stores</option>
+																	<option>Zara</option>
+																	<option>H&M</option>
+																	<option>D&G</option>
+																	<option>Desal</option>
+																</select>							
+															</div>
+															<div class="mb-2">
+																<label for="text3" class="form-label">Filter Data Based on DateRange</label>
+																	<div class="d-flex gap-2 justify-content-between">
+																		<input id="datepicker" placeholder="dd/mm/yy" width="140" />
+																		<input id="datepicker1" placeholder="dd/mm/yy" width="140" />
+																	</div>						
+															</div>
+														</form>															
+													</div>
+                                                </div>
+												<div class="btn-group">
+
+													<button class="btn btn-info-light filterbtn"> <i class="la la-pencil-square"></i> Export</button>
+												</div>
+											</div>
+                                        </div>
+									</div>
+									<div class="card-body px-0">
+										<div class="table-responsive">
+											<table class="table table-head-bg-info table-striped table-hover">	
+                                                <thead>
+													<tr>
+													<th>Promotion ID</th>
+													<th>Promotion Name</th>
+													<th>Mall Name</th>
+													<th>Store Name</th>
+													<th style="width: 300px;">Start Data & Time</th>
+													<th style="width: 300px;">End Data & Time</th>
+													<th>Status</th>
+													<th>Promotion status</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+													<tr>
+														<td>11223</td>
+														<td>Summer Sale</td>
+														<td>360</td>
+														<td>H&M</td>
+														<td style="white-space: nowrap;">12-04-2025 : 11:43 AM</td>
+														<td style="white-space: nowrap;">16-04-2025 : 12:02 PM</td>
+														<td><span class="badge badge-success">Approved</span></td>
+														<td class="text-center">Active</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="card-footer ">
+										<div class="stats">
+											<i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+										</div>
+									</div>
+								</div>
 							</div>
-						 </div>
+						</div>
 					</div>
 				</div>
-				<footer class="footer d-none">
+				<footer class="footer">
 					<div class="container-fluid">
 						<nav class="pull-left">
 							<ul class="nav">
@@ -249,8 +441,27 @@
 			</div>
 		</div>
 	</div>
-	
-	
+	<!-- Modal -->
+	<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-primary">
+					<h6 class="modal-title"><i class="la la-frown-o"></i> Under Development</h6>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center">									
+					<p>Currently the pro version of the <b>Ready Dashboard</b> Bootstrap is in progress development</p>
+					<p>
+						<b>We'll let you know when it's done</b></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script src="assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -267,6 +478,18 @@
 <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/js/ready.min.js"></script>
 <script src="assets/js/demo.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+ <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4',
+			placeholder: true
+        });
+        $('#datepicker1').datepicker({
+            uiLibrary: 'bootstrap4',
+			placeholder: true
+        });
 
 
+		
+    </script>
 </html>
